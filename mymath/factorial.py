@@ -2,7 +2,8 @@ def isInt(n):
     """
     Checks if the given number is in fact an integer
     """
-	return ((n % 1) == 0)
+	result = ((n % 1) == 0)
+	return result
 
 def factorial(n):
     """
@@ -12,9 +13,9 @@ def factorial(n):
     :return: The resultant factorial
     """
     if isInt(n):
-         raise ValueError('Only use integers.')
+		raise ValueError('Only use integers.')
     elif n < 0:
-        raise ValueError('Only use non-negative integers.')
+		raise ValueError('Only use non-negative integers.')
 
     factorial = 1
     for i in range(1, n + 1):
