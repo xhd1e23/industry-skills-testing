@@ -1,7 +1,7 @@
 def isInt(n):
-    """
-    Checks if the given number is in fact an integer
-    """
+	"""
+	Checks if the given number is in fact an integer
+	"""
 	result = ((n % 1) == 0)
 	return result
 
